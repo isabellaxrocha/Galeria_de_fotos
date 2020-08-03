@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+    <head> 
+        <meta charset="utf-8">
+        <title> Galeria de Fotos </title>
+        <style type="text/css">
+        
+        body {
+            background-color:black;
+        }
+         
+        #principal {
+            width: 672px;
+            height: 448px;
+            margin: auto;
+        }
+        
+        .fotos {
+            width: 200px;
+            height: 200px;
+            float: left;
+            border-width: 2px;
+            border-color: black;
+            border-style: solid;
+            margin: 10px;
+            filter: grayscale(100%);
+        }
+        
+        .fotos:hover{
+            -webkit-filter: none;
+            border-color:goldenrod;
+        }
+
+        </style>    
+
+        <script src="js/jquery-1.11.0.min.js"></script>
+        <script src="js/lightbox.min.js"></script>
+        <link href="css/lightbox.css" rel="stylesheet" />
+
+    </head>
+
+    <body> 
+    <div id = "principal">
+
+        <div class = "fotos">
+            <a href="imagens/animais.jpg" data-lightbox="galeria_01"> 
+                <img src="imagens/mini/animais.jpg">
+            </a>
+        </div>
+        
+        <div class = "fotos">
+            <a href="imagens/filme.jpg" data-lightbox="galeria_01"> 
+                <img src="imagens/mini/filme.jpg">
+            </a>
+        </div>
+        
+        <div class = "fotos">
+            <a href="imagens/ingles.jpg" data-lightbox="galeria_01"> 
+                <img src="imagens/mini/ingles.jpg">
+            </a>
+        </div>
+        
+        <div class = "fotos">
+            <a href="imagens/musica.jpg" data-lightbox="galeria_02"> 
+                <img src="imagens/mini/musica.jpg">
+            </a>
+        </div>
+        
+        <div class = "fotos">
+            <a href="imagens/pizza.jpg" data-lightbox="galeria_02"> 
+                <img src="imagens/mini/pizza.jpg">
+            </a>
+        </div>
+        
+        <div class = "fotos">
+            <a href="imagens/viagens.jpg" data-lightbox="galeria_02"> 
+                <img src="imagens/mini/viagens.jpg">
+            </a>
+        </div>
+
+    </div>
+
+    </body>
+
+</html>
